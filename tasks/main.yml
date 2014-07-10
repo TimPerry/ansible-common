@@ -1,0 +1,7 @@
+---
+- name: setup admin user
+  user: name={{ admin_username }}
+        state=present
+        groups="sudo"
+        comment="admin user"
+        generate_ssh_key=yes
